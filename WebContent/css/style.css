@@ -1,0 +1,256 @@
+@CHARSET "UTF-8";
+
+body {
+    font-family: "Hiragino Kaku Gothic Pro", Meiryo, "MS PGothic", Helvetica,
+        Arial, sans-serif;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 70px 800px 100px;
+}
+
+#background-color {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    background-color: #f5f5f5;
+}
+
+#header {
+    padding: 0 3%;
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: #333333;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+#title {
+    font-size: 25px;
+}
+
+#login {
+    color: white;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background-color: #333333;
+}
+
+#sign {
+    color: white;
+}
+#logout{
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+#main {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 3% 69% 5% 21% 2%;
+    grid-template-rows: 85% 15%;
+}
+
+#left-container {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#right-container {
+    grid-column: 4/5;
+    grid-row: 1/2;
+    display: grid;
+}
+
+
+
+#left-option {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: right;
+}
+
+#right-option {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    text-align: right;
+    padding-top:20px;
+}
+
+/*table*/
+table, tbody, tr, th, td {
+    border: none;
+}
+
+table, tr, th, td {
+    border: 1px solid #cccccc;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+th {
+    width: 26%;
+    padding: 10px 2%;
+}
+
+td {
+    width: 66%;
+    padding: 10px 2%;
+}
+
+
+/*index*/
+#index-left{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows:15% 10% 27% 10% 10% 10%;
+
+}
+
+.pad{
+    padding-top:25px;
+}
+
+h2{
+    font-size:18px;
+}
+
+h1{
+    font-size:25px;
+
+}
+
+#nowQuest{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+
+}
+#content{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    text-align: center;
+
+}
+
+#startTime{
+    grid-column: 1/2;
+    grid-row: 4/5;
+
+}
+
+#time{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    text-align: center;
+
+}
+
+#endTime{
+    grid-column: 3/4;
+    grid-row: 4/5;
+    text-align: right;
+}
+
+#progress{
+    grid-column: 1/4;
+    grid-row: 5/6;
+    width:100%;
+    height:70px;
+    text-align: center;
+}
+
+#Timer{
+    grid-column: 1/2;
+    grid-row: 6/7;
+
+}
+
+#limtTime{
+    grid-column: 2/3;
+    grid-row: 6/7;
+    text-align: center;
+
+}
+
+#totalTime{
+    grid-column: 3/4;
+    grid-row: 6/7;
+    text-align: right;
+
+}
+
+#index-right{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#index-select{
+    padding-top:10px;
+
+}
+#index-list{
+    grid-column: 1/3;
+    grid-row: 2/3;
+
+    height:590px;
+    background-color:white;
+    overflow-y:scroll
+}
+
+/*rutine*/
+#rutines-list{
+    display: grid;
+    height:600px;
+    background-color:white;
+}
+#rutines-right{
+    display: grid;
+    height:400px;
+    background-color:white;
+
+}
+/*quest*/
+#quest-left{
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+#quest-select{
+    text-align: right;
+}
+
+
+#quest-list{
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    height:600px;
+    background-color:white;
+
+}
+
+/*show*/
+#show-list{
+    display: grid;
+    height:600px;
+    background-color:white;
+
+}
