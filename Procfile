@@ -1,1 +1,1 @@
-web: java -jar target/java-getting-started-1.0.jar
+web: target/start -Dhttp.port=${PORT} ${JAVA_OPTS}
