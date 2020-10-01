@@ -1,1 +1,1 @@
-web: target/start -Dhttp.port=${PORT} ${JAVA_OPTS}
+web: java -jar build/libs/gradle-getting-started-1.0.jar
