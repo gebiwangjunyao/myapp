@@ -7,13 +7,14 @@
 		<class>dto.Quest</class>
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
-			<property name="javax.persistence.jdbc.user" value="mesuser"/>
-			<property name="javax.persistence.jdbc.password" value="mespass"/>
-			<property name="javax.persistence.schema-generation.database.action" value="create"/>
+			<property name="javax.persistence.jdbc.user" value="b23f7a89c217c0"/>
+			<property name="javax.persistence.jdbc.password" value="2c3f8634"/>
+			<property name="javax.persistence.schema-generation.database.action" value="none"/>
 			<property name="hibernate.dialect" value="	org.hibernate.dialect.MySQL5Dialect"/>
 			<property name="hibernate.show_sql" value="true"/>
 			<property name="hibernate.format_sql	" value="true"/>
-			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/myapp?useSSL=false&amp;useUnicode=true&amp;characterEncoding=utf8"/>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://us-cdbr-east-02.cleardb.com/heroku_fae6758249896c4?reconnect=true&amp;useSSL=false&amp;useUnicode=true&amp;characterEncoding=utf8&amp;characterSetResults=utf8"/>
+			<property name="javax.persistence.schema-generation.scripts.action" value="none"/>
 		</properties>
 	</persistence-unit>
 </persistence>

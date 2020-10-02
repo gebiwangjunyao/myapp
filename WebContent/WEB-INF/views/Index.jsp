@@ -20,6 +20,7 @@
                 <h2 id="limtTime">残り</h2>
                 <p id="Timer">経過</p>
             </div>
+            <p><c:if test="user.admin_flag==1"><a href="<c:url value='/AllUser' />">全てのユーザー一覧</a></c:if></p>
         </div>
 
 
@@ -80,7 +81,7 @@
 
         <div id="left-option">
             <ul>
-                <li>日を選択されると表示されます</li>
+                <li>クエストのある日を選択されると表示されます</li>
             </ul>
         </div>
         <div id="right-option">

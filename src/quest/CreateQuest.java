@@ -97,13 +97,13 @@ public class CreateQuest extends HttpServlet {
                 em.getTransaction().commit();
                 em.close();
 
-                request.getSession().setAttribute("flush", "登録が完了しました。");
+                request.getSession().setAttribute("flush", "追加しました。");
 
                 response.sendRedirect(request.getContextPath() + "/NewQuest");
             }else{
                 em.close();
 
-                request.getSession().setAttribute("flush", "登録が失敗しました。");
+                request.getSession().setAttribute("flush", "追加が失敗しました。入力内容に不備があります。");
 
                 response.sendRedirect(request.getContextPath() + "/NewQuest");
 

@@ -100,7 +100,10 @@
 
 </div>
 <div id="right-option">
-        <a href="<c:url value='/Index' />">タイトルへ戻る</a>
+<ul>
+                <li><a href="<c:url value='/NewQuest' />">クエスト編集</a></li>
+        <li><a href="<c:url value='/Index' />">タイトルへ戻る</a></li>
+        </ul>
 
 </div>
 

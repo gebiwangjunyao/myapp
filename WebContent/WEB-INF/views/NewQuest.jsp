@@ -54,35 +54,41 @@
                 <c:out value="${flush}"></c:out>
             </div>
         </c:if>
+
             <form class="pad" method="POST"
                 action="<c:url value='/CreateQuest' />">
                 <p>開始時間</p>
                 <input name="startTime" type="time" />
-                <p>終了時間</p>
+                <p><br>終了時間</p>
                 <input name="endTime" type="time" />
-                <p>クエスト</p>
+                <p><br>クエスト</p>
                 <input type="text" name="quest" />
-                <p>内容詳細</p>
-                <textarea id="content-input"  name="content"></textarea>
-                <p>操作</p>
+                <p><br>内容詳細</p>
+                <textarea id="content-input"  name="content" style="height:100px;width:300px;"></textarea>
+                <p><br>操作</p>
                 <button type="submit">追加</button>
                 <input type="hidden" name="_token" value="${_token}" />
 
             </form>
+            <p>Eabキーでフォーカス移動できます<br>Enterキーで追加確認できます<br>(内容詳細では改行になります) </p>
             <div id="quest-right">
             </div>
         </div>
 
 <div id="left-option">
 <ul>
-            <li>日を選んでからクエスト登録してください</li>
-            <li>時間かぶらないように登録いてください</li>
-            <li>(例：クエスト①　1:00~2:00,　クエスト②　2:01~3:00)</li>
-        <li>登録時個人情報を控えてください</li>
+            <li class="li">日を選んでからクエスト登録してください</li>
+            <li class="li">時間かぶらないように登録いてください</li>
+            <li class="li">日越しの登録はできません　00:00~23:59　となります</li>
+            <li class="li">(例：クエスト①　01:00~02:00,　クエスト②　02:01~03:00)</li>
+        <li class="li">登録時個人情報を控えてください</li>
 </ul>
         </div>
         <div id="right-option">
-            <a href="<c:url value='/Index' />">タイトルへ戻る</a>
+<ul>
+                <li><a href="<c:url value='/NewRutine' />">日を編集</a></li>
+        <li><a href="<c:url value='/Index' />">タイトルへ戻る</a></li>
+        </ul>
 
         </div>
 
